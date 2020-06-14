@@ -7,10 +7,11 @@
 namespace deepl {
     void init()
     {
-        spdlog::info("Changed deepl...");
+        spdlog::info("Initializing deepl...");
+
         arma::mat A = arma::randu<arma::mat>(4, 5);
         arma::mat B = arma::randu<arma::mat>(4, 5);
-
+        
         std::cout << A* B.t() << std::endl;
     }
 

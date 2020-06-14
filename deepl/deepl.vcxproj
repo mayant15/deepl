@@ -72,15 +72,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -738,6 +746,16 @@
     <ClInclude Include="include\armadillo_bits\xtrans_mat_meat.hpp" />
     <ClInclude Include="include\armadillo_bits\xvec_htrans_bones.hpp" />
     <ClInclude Include="include\armadillo_bits\xvec_htrans_meat.hpp" />
+    <ClInclude Include="include\openblas\cblas.h" />
+    <ClInclude Include="include\openblas\f77blas.h" />
+    <ClInclude Include="include\openblas\lapack.h" />
+    <ClInclude Include="include\openblas\lapacke.h" />
+    <ClInclude Include="include\openblas\lapacke_config.h" />
+    <ClInclude Include="include\openblas\lapacke_example_aux.h" />
+    <ClInclude Include="include\openblas\lapacke_mangling.h" />
+    <ClInclude Include="include\openblas\lapacke_utils.h" />
+    <ClInclude Include="include\openblas\openblas\lapacke_mangling.h" />
+    <ClInclude Include="include\openblas\openblas_config.h" />
     <ClInclude Include="include\spdlog\async.h" />
     <ClInclude Include="include\spdlog\async_logger-inl.h" />
     <ClInclude Include="include\spdlog\async_logger.h" />
@@ -831,6 +849,7 @@
     <ClCompile Include="src\deepl.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Library Include="lib\openblas.lib" />
     <Library Include="lib\spdlogd.lib" />
   </ItemGroup>
   <ItemGroup>

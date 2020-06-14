@@ -2028,6 +2028,36 @@
     <ClInclude Include="include\armadillo_bits\xvec_htrans_meat.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\openblas\openblas\lapacke_mangling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openblas\cblas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openblas\f77blas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openblas\lapack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openblas\lapacke.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openblas\lapacke_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openblas\lapacke_example_aux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openblas\lapacke_mangling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openblas\lapacke_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openblas\openblas_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\deepl.cpp">
@@ -2036,6 +2066,7 @@
   </ItemGroup>
   <ItemGroup>
     <Library Include="lib\spdlogd.lib" />
+    <Library Include="lib\openblas.lib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="include\armadillo.h" />
