@@ -2070,5 +2070,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="include\armadillo.h" />
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>

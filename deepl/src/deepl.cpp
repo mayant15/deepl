@@ -3,7 +3,6 @@
 #include "armadillo.h"
 #include <iostream>
 
-
 namespace deepl {
     void init()
     {
