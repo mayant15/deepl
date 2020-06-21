@@ -3,5 +3,4 @@
 
 namespace deepl {
     void init();
-    void print(const std::string str);
 }
